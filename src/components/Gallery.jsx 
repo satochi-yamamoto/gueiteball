@@ -1,0 +1,22 @@
+import React from 'react';
+
+const images = [
+  '/assets/fotos/jogo1.jpg',
+  '/assets/fotos/time.jpg',
+  '/assets/fotos/torneio.jpg',
+];
+
+function Gallery() {
+  return (
+    <section className="gallery">
+      <h2>Galeria de Eventos</h2>
+      <div className="image-grid">
+        {images.map((src, i) => (
+          <img key={i} src={src} alt={`Foto ${i + 1}`} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Gallery;
