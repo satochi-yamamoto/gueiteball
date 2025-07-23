@@ -5,7 +5,8 @@
  */
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// HashRouter é usado para evitar erros 404 em hospedagens estáticas como a Vercel
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Componentes
 import Navbar from '../components/Navbar';
