@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
  * @param {Function} props.onSubmit - Função chamada ao submeter o formulário
  * @returns {JSX.Element} Formulário de contato
  */
-function ContactForm({ onSubmit }) {
+function ContactForm({ onSubmit = null }) {
   // Estado do formulário
   const [formData, setFormData] = useState({
     nome: '',
@@ -122,11 +122,6 @@ function ContactForm({ onSubmit }) {
 // Definição dos tipos das propriedades
 ContactForm.propTypes = {
   onSubmit: PropTypes.func,
-};
-
-// Valores padrão das propriedades
-ContactForm.defaultProps = {
-  onSubmit: null,
 };
 
 export default ContactForm;
