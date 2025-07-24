@@ -50,3 +50,15 @@ body {
   max-width: 200px;
   text-align: center;
 }
+
+/* Fundo branco nas páginas internas */
+.sobre-container,
+.clubes-container,
+.torneios-container,
+.regras-container,
+.blog-container,
+.contato-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 1rem;
+}
