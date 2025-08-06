@@ -1,9 +1,10 @@
 /**
  * @fileoverview Componente de rodapé do site
- * @description Rodapé com informações de copyright e contato
+ * @description Rodapé com informações de copyright, contato e links para políticas
  */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  * Componente de rodapé
@@ -17,11 +18,11 @@ function Footer() {
   return (
     <footer className="footer" role="contentinfo">
       {/* Copyright */}
-      <p>&copy; {currentYear} Gueitebal.com.br</p>
+      <p>&copy; {currentYear} Gueitebal.com.br - UCGB | União dos Clubes de Gueitebol do Brasil</p>
       
       {/* Informações de desenvolvimento e contato */}
       <p>
-        Desenvolvido por  |{' '}
+        Desenvolvido por{' '}
         <a 
           href="https://ydsoftware.com.br" 
           target="_blank" 
@@ -38,6 +39,32 @@ function Footer() {
           contato@ydsoftware.com.br
         </a>
       </p>
+      
+      {/* Links para políticas */}
+      <div className="footer-policies">
+        <Link to="/politica-privacidade" aria-label="Política de Privacidade">
+          Política de Privacidade
+        </Link>
+        {' | '}
+        <Link to="/termos-uso" aria-label="Termos de Uso">
+          Termos de Uso
+        </Link>
+        {' | '}
+        <a 
+          href="https://policies.google.com/privacy" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Política de Privacidade do Google"
+        >
+          Privacidade Google
+        </a>
+      </div>
+      
+      {/* SEO keywords ocultos */}
+      <div style={{display: 'none'}} aria-hidden="true">
+        gueitebal, gateball, UCGB, união de clubes gateball do brasil, esporte japonês, 
+        terceira idade, esporte estratégico, torneios gateball, clubes brasil gateball
+      </div>
     </footer>
   );
 }

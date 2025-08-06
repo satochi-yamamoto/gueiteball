@@ -14,9 +14,12 @@ import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
     <header className="hero" role="banner">
-      <div className="hero-text">
+      <div className="hero-content">
         <h1>Gueitebol: Estratégia, Saúde e Inclusão</h1>
-        <p>Descubra tudo sobre esse esporte inspirador que une gerações.</p>
+        <p>
+          Descubra o esporte japonês que une gerações, promove saúde e desenvolve estratégia. 
+          Junte-se à União dos Clubes de Gueitebol do Brasil (UCGB) e faça parte desta comunidade incrível.
+        </p>
         
         {/* Call-to-action button */}
         <Link 

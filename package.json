@@ -1,11 +1,26 @@
 {
   "name": "gueiteball",
   "version": "1.0.0",
-  "description": "Site oficial da União dos Clubes de Gueitebol do Brasil",
+  "description": "Site oficial da União dos Clubes de Gueitebol do Brasil (UCGB) - Promovendo o gateball no Brasil",
+  "keywords": [
+    "gueitebal",
+    "gateball", 
+    "UCGB",
+    "união de clubes gateball do brasil",
+    "esporte japonês",
+    "terceira idade",
+    "esporte estratégico",
+    "torneios",
+    "clubes brasil"
+  ],
+  "homepage": "https://gueitebal.com.br",
+  "author": "UCGB - União dos Clubes de Gueitebol do Brasil",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000"
   },
   "dependencies": {
     "prop-types": "^15.8.1",

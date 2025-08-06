@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gueitebal.com.br/sitemap.xml
+
+# Diretórios importantes
+Allow: /
+Allow: /#/sobre
+Allow: /#/clubes
+Allow: /#/torneios
+Allow: /#/regras
+Allow: /#/blog
+Allow: /#/contato
+Allow: /#/politica-privacidade
+Allow: /#/termos-uso
+
+# Crawl-delay para bots
+Crawl-delay: 1
