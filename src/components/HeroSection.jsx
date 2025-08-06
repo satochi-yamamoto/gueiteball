@@ -17,8 +17,8 @@ function HeroSection() {
       <div className="hero-content">
         <h1>Gueitebol: Estratégia, Saúde e Inclusão</h1>
         <p>
-          Descubra o esporte japonês que une gerações, promove saúde e desenvolve estratégia. 
-          Junte-se à União dos Clubes de Gueitebol do Brasil (UCGB) e faça parte desta comunidade incrível.
+          Descubra o esporte japonês que une gerações, promove saúde e desenvolve estratégia
+          e faça parte desta comunidade incrível.
         </p>
         
         {/* Call-to-action button */}

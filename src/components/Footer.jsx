@@ -24,7 +24,7 @@ function Footer() {
       </div>
       
       {/* Copyright */}
-      <p>&copy; {currentYear} Gueitebal.com.br - UCGB | União dos Clubes de Gueitebol do Brasil</p>
+      <p>&copy; {currentYear} Gueitebal.com.br</p>
       
       {/* Informações de desenvolvimento e contato */}
       <p>
