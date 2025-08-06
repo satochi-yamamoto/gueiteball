@@ -4,7 +4,7 @@
   "description": "Site oficial da União dos Clubes de Gueitebol do Brasil (UCGB) - Promovendo o gateball no Brasil",
   "keywords": [
     "gueitebal",
-    "gateball", 
+    "gateball",
     "UCGB",
     "união de clubes gateball do brasil",
     "esporte japonês",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.1.0",
+    "terser": "^5.43.1",
     "vite": "^4.5.0"
   }
 }

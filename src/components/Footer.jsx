@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LogoSimple from './LogoSimple';
 
 /**
  * Componente de rodapé
@@ -17,6 +18,11 @@ function Footer() {
   
   return (
     <footer className="footer" role="contentinfo">
+      {/* Logo no footer */}
+      <div className="footer-logo">
+        <LogoSimple size={35} />
+      </div>
+      
       {/* Copyright */}
       <p>&copy; {currentYear} Gueitebal.com.br - UCGB | União dos Clubes de Gueitebol do Brasil</p>
       

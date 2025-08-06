@@ -5,6 +5,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
+import LogoSimple from './LogoSimple';
 
 /**
  * Componente de navegação principal
@@ -17,7 +19,15 @@ function Navbar() {
       {/* Logo do site */}
       <div className="logo">
         <Link to="/" aria-label="Ir para página inicial">
-          Gueitebal.com.br
+          {/* Logo completo para desktop */}
+          <div className="logo-desktop">
+            <Logo width={180} height={50} />
+          </div>
+          {/* Logo simplificado para mobile */}
+          <div className="logo-mobile">
+            <LogoSimple size={35} />
+            <span className="logo-text-mobile">Gueitebol</span>
+          </div>
         </Link>
       </div>
       

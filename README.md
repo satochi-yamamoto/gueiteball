@@ -12,6 +12,24 @@ Site oficial da União dos Clubes de Gueitebol do Brasil (UCGB), promovendo o es
 - **Busca Integrada**: Sistema de busca para facilitar navegação
 - **Performance**: Carregamento rápido e otimizado
 
+## 🎨 Design e Identidade Visual
+
+### Logo Oficial
+O site agora conta com um **logo profissional** criado especificamente para o Gueitebol Brasil:
+
+- **Logo Completo**: Usado na navbar desktop com elementos visuais do esporte
+- **Logo Simplificado**: Versão minimalista para mobile e situações de espaço reduzido
+- **Favicon SVG**: Ícone escalável para abas do navegador e aplicativos
+- **Paleta de Cores**: Verde (#2c5530, #4a7c59, #6db33f) representando o campo esportivo
+
+### Elementos do Logo
+- Campo de gatebol estilizado
+- Três portões característicos do esporte
+- Bola e taco representativos
+- Tipografia moderna e legível
+- Gradientes sutis para profundidade
+- Design responsivo e escalável
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **React 18** - Biblioteca JavaScript para interfaces

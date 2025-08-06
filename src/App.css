@@ -41,12 +41,58 @@ body {
   z-index: 1000;
 }
 
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
 .navbar .logo a {
   color: var(--white);
   text-decoration: none;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.navbar .logo a:hover {
+  opacity: 0.9;
+}
+
+/* Logo responsivo */
+.logo-desktop {
+  display: block;
+}
+
+.logo-mobile {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text-mobile {
+  font-size: 1.2rem;
   font-weight: 700;
+  color: var(--white);
   letter-spacing: -0.5px;
+}
+
+/* Estilos para os componentes de logo */
+.gueitebol-logo {
+  transition: transform 0.3s ease;
+}
+
+.gueitebol-logo:hover {
+  transform: scale(1.05);
+}
+
+.gueitebol-logo-simple {
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.gueitebol-logo-simple:hover {
+  transform: scale(1.1);
 }
 
 .navbar a {
@@ -84,6 +130,21 @@ body {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: var(--white);
   margin-top: auto;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo .gueitebol-logo-simple {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo .gueitebol-logo-simple:hover {
+  opacity: 1;
 }
 
 .footer p {
@@ -544,6 +605,15 @@ body {
     gap: 1rem;
   }
   
+  /* Alternar logos para mobile */
+  .logo-desktop {
+    display: none;
+  }
+  
+  .logo-mobile {
+    display: flex;
+  }
+  
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
@@ -569,6 +639,14 @@ body {
   .tips-grid {
     grid-template-columns: 1fr;
   }
+  
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .valores-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -580,6 +658,10 @@ body {
     font-size: 1.75rem;
   }
   
+  .logo-text-mobile {
+    font-size: 1rem;
+  }
+  
   .sobre-container,
   .clubes-container,
   .torneios-container,
@@ -587,5 +669,24 @@ body {
   .blog-container,
   .contato-container {
     padding: 1rem;
+  }
+}
+
+/* Media query específica para logos grandes */
+@media (max-width: 1024px) {
+  .logo-desktop .gueitebol-logo {
+    width: 150px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-mobile .gueitebol-logo-simple {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar {
+    padding: 0.75rem;
   }
 }
