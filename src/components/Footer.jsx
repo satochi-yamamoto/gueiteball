@@ -21,21 +21,21 @@ function Footer() {
       
       {/* Informações de desenvolvimento e contato */}
       <p>
-        Desenvolvido por{' '}
+        Desenvolvido por  |{' '}
         <a 
-          href="https://seulink.dev" 
+          href="https://ydsoftware.com.br" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Link para o desenvolvedor"
         >
-          SeuNome
+          YD Software
         </a>{' '}
         |{' '}
         <a 
-          href="mailto:contato@gueitebal.com.br"
+          href="mailto:contato@ydsoftware.com.br"
           aria-label="Enviar email para contato"
         >
-          contato@gueitebal.com.br
+          contato@ydsoftware.com.br
         </a>
       </p>
     </footer>
