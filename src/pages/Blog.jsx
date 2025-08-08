@@ -7,6 +7,7 @@ import React from 'react';
 import { BLOG_POSTS } from '../constants/blog';
 import { useSEO, seoPages } from '../utils/seo';
 import Footer from '../components/Footer';
+import AdsterraBanner from '../components/AdsterraBanner';
 
 /**
  * Página do blog
@@ -125,6 +126,13 @@ function Blog() {
           </div>
         </aside>
       </main>
+      
+      {/* Banner nativo Adsterra - posicionado após o conteúdo principal */}
+      <AdsterraBanner 
+        containerId="container-c94f18fb54ae25a924347ac35a5ef3b0-blog"
+        className="adsterra-banner-2x1"
+        style="native-banner"
+      />
       
       <Footer />
     </>

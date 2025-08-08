@@ -661,6 +661,78 @@ body {
 }
 
 /* ===================================
+   ESTILOS PARA ADSTERRA BANNERS
+   =================================== */
+
+.adsterra-container {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.adsterra-banner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.adsterra-banner.native-banner {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adsterra-banner.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Container específico para diferentes layouts */
+.adsterra-banner-2x1 {
+  aspect-ratio: 2/1;
+  max-width: 600px;
+}
+
+.adsterra-banner-square {
+  aspect-ratio: 1/1;
+  max-width: 300px;
+}
+
+/* Adaptação responsiva para Adsterra */
+@media (max-width: 768px) {
+  .adsterra-container {
+    margin: 1.5rem auto;
+  }
+  
+  .adsterra-banner {
+    padding: 0.8rem;
+    min-height: 100px;
+  }
+  
+  .adsterra-banner-2x1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .adsterra-container {
+    margin: 1rem auto;
+  }
+  
+  .adsterra-banner {
+    padding: 0.6rem;
+    min-height: 80px;
+  }
+}
+
+/* ===================================
    ESTILOS PARA SIDEBAR E NEWSLETTER
    =================================== */
 

@@ -10,6 +10,7 @@ import HeroSection from '../components/HeroSection';
 import InfoCard from '../components/InfoCard';
 import Footer from '../components/Footer';
 import SearchComponent from '../components/SearchComponent';
+import AdsterraBanner from '../components/AdsterraBanner';
 
 /**
  * Página inicial
@@ -99,6 +100,13 @@ function Home() {
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
       </div>
+      
+      {/* Banner nativo Adsterra */}
+      <AdsterraBanner 
+        containerId="container-c94f18fb54ae25a924347ac35a5ef3b0"
+        className="adsterra-banner-2x1"
+        style="native-banner"
+      />
       
       {/* Seção de cards informativos */}
       <section className="info-section" aria-label="Informações sobre Gueitebol">
