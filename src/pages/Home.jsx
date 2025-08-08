@@ -11,6 +11,8 @@ import InfoCard from '../components/InfoCard';
 import Footer from '../components/Footer';
 import SearchComponent from '../components/SearchComponent';
 import AdsterraBanner from '../components/AdsterraBanner';
+import AdsterraIframeBanner from '../components/AdsterraIframeBanner';
+import AdsterraAdditionalBanner from '../components/AdsterraAdditionalBanner';
 
 /**
  * Página inicial
@@ -108,6 +110,9 @@ function Home() {
         style="native-banner"
       />
       
+      {/* Banner iframe Adsterra (300x250) */}
+      <AdsterraIframeBanner className="sidebar-banner" />
+      
       {/* Seção de cards informativos */}
       <section className="info-section" aria-label="Informações sobre Gueitebol">
         <InfoCard
@@ -123,6 +128,9 @@ function Home() {
           description="Acompanhe calendário de torneios nacionais e regionais organizados pela UCGB."
         />
       </section>
+      
+      {/* Banner adicional Adsterra */}
+      <AdsterraAdditionalBanner className="footer-banner" />
       
       {/* Rodapé */}
       <Footer />

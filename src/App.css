@@ -705,9 +705,44 @@ body {
   max-width: 300px;
 }
 
-/* Adaptação responsiva para Adsterra */
+/* Estilos para banner iframe 300x250 */
+.adsterra-iframe-container {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 300px;
+}
+
+.adsterra-iframe-banner {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* Estilos para banner adicional */
+.adsterra-additional-container {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.adsterra-additional-banner {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+/* Adaptação responsiva para todos os banners Adsterra */
 @media (max-width: 768px) {
-  .adsterra-container {
+  .adsterra-container,
+  .adsterra-iframe-container,
+  .adsterra-additional-container {
     margin: 1.5rem auto;
   }
   
@@ -719,16 +754,37 @@ body {
   .adsterra-banner-2x1 {
     max-width: 100%;
   }
+  
+  .adsterra-iframe-container {
+    max-width: 100%;
+  }
+  
+  .adsterra-iframe-banner {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .adsterra-additional-banner {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-  .adsterra-container {
+  .adsterra-container,
+  .adsterra-iframe-container,
+  .adsterra-additional-container {
     margin: 1rem auto;
   }
   
   .adsterra-banner {
     padding: 0.6rem;
     min-height: 80px;
+  }
+  
+  .adsterra-iframe-banner {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
   }
 }
 

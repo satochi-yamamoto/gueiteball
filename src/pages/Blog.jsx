@@ -8,6 +8,8 @@ import { BLOG_POSTS } from '../constants/blog';
 import { useSEO, seoPages } from '../utils/seo';
 import Footer from '../components/Footer';
 import AdsterraBanner from '../components/AdsterraBanner';
+import AdsterraIframeBanner from '../components/AdsterraIframeBanner';
+import AdsterraAdditionalBanner from '../components/AdsterraAdditionalBanner';
 
 /**
  * Página do blog
@@ -109,6 +111,9 @@ function Blog() {
             </ul>
           </div>
           
+          {/* Banner iframe na sidebar */}
+          <AdsterraIframeBanner className="sidebar-ad" />
+          
           <div className="sidebar-card">
             <h3>📬 Newsletter</h3>
             <p>Receba as últimas notícias do Gueitebol no seu e-mail.</p>
@@ -133,6 +138,9 @@ function Blog() {
         className="adsterra-banner-2x1"
         style="native-banner"
       />
+      
+      {/* Banner adicional Adsterra */}
+      <AdsterraAdditionalBanner className="blog-footer-banner" />
       
       <Footer />
     </>
